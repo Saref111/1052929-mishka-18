@@ -129,5 +129,23 @@
         </a>
       </div>
     </footer>
+    <div class="popup">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="popup__form">
+        <legend class="popup__legend">Выберите размер:</legend>
+        <ul class="popup__list">
+          <li class="popup__size">
+            <input class="visually-hidden" type="radio" name="size" id="S-size" checked><label for="S-size">S</label>
+          </li>
+          <li class="popup__size">
+            <input class="visually-hidden" type="radio" name="size" id="M-size"><label for="M-size">M</label>
+          </li>
+          <li class="popup__size">
+            <input class="visually-hidden" type="radio" name="size" id="L-size"><label for="L-size">L</label>
+          </li>
+        </ul>
+        <button class="button popup__button" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
