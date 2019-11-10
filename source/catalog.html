@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <head class="page-header">
+      <div class="page-header__logo logo">
+        <a class="logo__link">
+          <img src="#" widht="100" height="100" alt="Логотип Mishka">
+        </a>
+      </div>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list page-nav">
+            <li class="page-nav__item">
+              <a href="#" class="page-nav__link">Каталог товаров</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#" class="page-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="page-nav__item page-nav__item--search">
+              <a href="#" class="page-nav__link">Поиск по сайту</a>
+            </li>
+            <li class="page-nav__item page-nav__item--cart">
+              <a href="#" class="page-nav__link">Корзина: <span class="page-nav__cart-content">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main class="page-main">
+        <h1 class="page-main__title">Каталог товаров</h1>
+        <section class="catalog">
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <article class="catalog__item catalog-card">
+                        <img src="#" alt="Мягкий игрушчный зайчик" class="catalog-card__img">
+                        <h2 class="catalog-card__title">
+                          <a href="#">Зайчик-попрыгайчик</a>
+                        </h2>
+                        <dl class="catalog-card__info">
+                          <dt>Рост</dt>
+                          <dd>30 см,</dd>
+                          <dt>вес</dt>
+                          <dd>200 г</dd>
+                        </dl>
+                        <b class="catalog-card__price">1200 руб.</b>
+                        <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину"></a>
+                    </article>
+                </li>
+                <li class="catalog__item">
+                    <article class="catalog__item catalog-card">
+                        <img src="#" alt="Корзинка с полотенцами" class="catalog-card__img">
+                        <h2 class="catalog-card__title">
+                          <a href="#">Корзинка для белья</a>
+                        </h2>
+                        <dl class="catalog-card__info">
+                          <dt>Диаметр</dt>
+                          <dd>15 см,</dd>
+                          <dt>высота</dt>
+                          <dd>10 см</dd>
+                        </dl>
+                        <b class="catalog-card__price">690 руб.</b>
+                        <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину"></a>
+                    </article>
+                </li>
+                <li class="catalog__item">
+                    <article class="catalog__item catalog-card">
+                        <img src="#" alt="Корзинка с игрушками" class="catalog-card__img">
+                        <h2 class="catalog-card__title">
+                          <a href="#">Большая корзинка для игрушек</a>
+                        </h2>
+                        <dl class="catalog-card__info">
+                          <dt>Диаметр</dt>
+                          <dd>30 см,</dd>
+                          <dt>высота</dt>
+                          <dd>30 см</dd>
+                        </dl>
+                        <b class="catalog-card__price">1500 руб.</b>
+                        <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину"></a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="process">
+          <h2 class="process__title">Процесс производства</h2>
+          <div class="process__wrapper">
+            <video class="process__video">
+              <source src="#">
+            </video>
+          </div>
+          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#" class="button process__button">Сделать заказ</a>
+        </section>
+    </main>
+    <footer class="page-footer">
+      <div class="pafe-footer__logo logo-footer">
+        <a class="logo-footer__logo">
+          <img src="#" widht="100" height="100" alt="Логотип Mishka">
+        </a>
+      </div>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">Instagram</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">Tweeter</a>
+        </li>
+      </ul>
+      <div class="page-footer__academy academy">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__copyright">
+          <span>Разработано</span><img class="academy__image" src="#" alt="HTML Академия">
+        </a>
+      </div>
+    </footer>
+    <div class="popup">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="popup__form">
+        <legend class="popup__legend">Выберите размер:</legend>
+        <ul class="popup__list">
+          <li class="popup__size">
+            <input class="visually-hidden" type="radio" name="size" id="S-size" checked><label for="S-size">S</label>
+          </li>
+          <li class="popup__size">
+            <input class="visually-hidden" type="radio" name="size" id="M-size"><label for="M-size">M</label>
+          </li>
+          <li class="popup__size">
+            <input class="visually-hidden" type="radio" name="size" id="L-size"><label for="L-size">L</label>
+          </li>
+        </ul>
+        <button class="button popup__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </body>
+</html>
