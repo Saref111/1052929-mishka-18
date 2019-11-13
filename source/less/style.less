@@ -1,5 +1,21 @@
 @import "node_modules/normalize.less/normalize.less";
 
+@font-face{
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff"),
+    url("../fonts/opensans.woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff"),
+    url("../fonts/opensansbold.woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
 *,
 *::before,
 *::after {
@@ -32,8 +48,7 @@ img {
   width: 100%;
 }
 
-body{
-    background-color: tomato;
-}
+@import "source/less/blocks/page-header.less";
+@import "source/less/blocks/page-nav.less";
 
  /*end*/
