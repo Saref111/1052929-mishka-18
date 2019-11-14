@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <head class="page-header">
-      <div class="page-header__logo logo">
+    <header class="page-header">
+      <div class="logo page-header__logo">
         <a class="logo__link">
-          <img src="#" widht="100" height="100" alt="Логотип Mishka">
+          <img src="#" widht="85" height="35" alt="Логотип Mishka">
         </a>
       </div>
-      <nav class="page-header__nav main-nav">
+      <nav class="main-nav page-header__nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -32,7 +33,7 @@
           </ul>
         </div>
       </nav>
-    </head>
+    </header>
     <main class="page-main">
       <h1 class="visually-hidden">Магазин Мишка</h1>
       <section class="cute-things">
@@ -50,15 +51,15 @@
         <h2 class="visually-hidden">Лучшие товары</h2>
         <article class="top-good__card good-card">
           <h3 class="good-card__title">Вязаные корзинки</h3>
-          <span class="good-popular">Товар недели</span>
+          <span class="good-card__popular">Товар недели</span>
           <p class="good-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <dl class="good-card__info-list">
             <dt class="good-card__term">Цвет:</dt>
-            <dd class="good-card__description">«Тиффани»/серый</dd>
+            <dd class="good-card__term-description">«Тиффани»/серый</dd>
             <dt class="good-card__term">Диаметр:</dt>
-            <dd class="good-card__description">25 см</dd>
+            <dd class="good-card__term-description">25 см</dd>
             <dt class="good-card__term">Высота:</dt>
-            <dd class="good-card__description">15 см</dd>
+            <dd class="good-card__term-description">15 см</dd>
           </dl>
           <img class="good-card__image" src="#" width="100" height="100" alt="Вязаные корзинки">
           <span class="good-card__price">Цена: 990 руб.</span>
@@ -87,8 +88,8 @@
           <cite class="feedback__author">Анастасия Красильникова <a class="feedback__author-link" href="#">@misssssiskras</a></cite>
         </div>
         <div class="feedback__buttons">
-          <button class="button feedback__previous" aria-label="Предыдущий отзыв"></button>
-          <button class="button feedback__next" aria-label="Следующий отзыв"></button>
+          <button class="button button--arrow feedback__previous" aria-label="Предыдущий отзыв"></button>
+          <button class="button button--arrow feedback__next" aria-label="Следующий отзыв"></button>
         </div>
         <a href="#" class="feedback__link button">Написать</a>
       </section>
@@ -97,7 +98,7 @@
         <dl class="contact__list">
           <dt class="contact__term">e-mail:</dt>
           <dd class="contact__description"><a class="contact__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-          <dt class="contact__term">Адресс</dt>
+          <dt class="contact__term">Адресс:</dt>
           <dd class="contact__description"><address class="contact__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address></dd>
         </dl>
         <div class="contact__map-wrapper">
@@ -107,20 +108,26 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="pafe-footer__logo logo-footer">
+      <div class="page-footer__logo logo-footer">
         <a class="logo-footer__logo">
           <img src="#" widht="100" height="100" alt="Логотип Mishka">
         </a>
       </div>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link">Instagram</a>
+          <a href="#" class="social-list__link">
+            <span class="visually-hidden">Instagram</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">Facebook</a>
+          <a href="#" class="social-list__link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">Tweeter</a>
+          <a href="#" class="social-list__link">
+            <span class="visually-hidden">Tweeter</span>
+          </a>
         </li>
       </ul>
       <div class="page-footer__academy academy">
@@ -130,22 +137,24 @@
       </div>
     </footer>
     <div class="popup">
-      <h2 class="popup__title">Добавить в корзину</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="popup__form">
-        <legend class="popup__legend">Выберите размер:</legend>
-        <ul class="popup__list">
-          <li class="popup__size">
-            <input class="visually-hidden" type="radio" name="size" id="s-size" checked><label for="s-size">S</label>
-          </li>
-          <li class="popup__size">
-            <input class="visually-hidden" type="radio" name="size" id="m-size"><label for="m-size">M</label>
-          </li>
-          <li class="popup__size">
-            <input class="visually-hidden" type="radio" name="size" id="l-size"><label for="l-size">L</label>
-          </li>
-        </ul>
-        <button class="button popup__button" type="submit">Добавить</button>
-      </form>
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Добавить в корзину</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="popup__form">
+          <legend class="popup__legend">Выберите размер:</legend>
+          <ul class="popup__list">
+            <li class="popup__size">
+              <input class="visually-hidden" type="radio" name="size" id="s-size" checked><label for="s-size">S</label>
+            </li>
+            <li class="popup__size">
+              <input class="visually-hidden" type="radio" name="size" id="m-size"><label for="m-size">M</label>
+            </li>
+            <li class="popup__size">
+              <input class="visually-hidden" type="radio" name="size" id="l-size"><label for="l-size">L</label>
+            </li>
+          </ul>
+          <button class="button button--green popup__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
