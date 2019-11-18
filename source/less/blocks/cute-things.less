@@ -45,3 +45,42 @@
     background-color: @aqua-dark;
   }
 }
+
+@media (min-width: 768px) {
+  .cute-things {
+    margin-top: -71px;
+    padding-top: 153px;
+    border-top: 1px solid @gray1;
+    background-position: center 50px;
+  }
+
+  .cute-things__wrapper {
+    width: 768px;
+  }
+
+  .cute-things__title {
+    .font-set(43px, 700, 50px);
+    margin: 0 120px;
+    margin-bottom: 373px;
+  }
+
+  .cute-things__list {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .cute-things__item {
+    height: 123px;
+  }
+
+  .cute-things__link {
+    width: 334px;
+    padding-top: 27px;
+    padding-left: 35px;
+    padding-right: 140px;
+    line-height: 30px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 107px;
+  }
+}
