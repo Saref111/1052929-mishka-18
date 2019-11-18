@@ -1,28 +1,63 @@
 .good-card__title {
-  .font-set(25px, 700, 30px);
+  .font-set(25px, 700, 27px);
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .good-card__popular {
+  display: block;
+  margin-bottom: 24px;
   .font-set(17px, 700, 20px,@aqua-light);
   text-transform: uppercase;
 }
 
 .good-card__description {
-  .font-set(15px, 400, 20px, @gray4);
+  .font-set(15px, 400, 24px, @gray4);
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.good-card__info-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
 }
 
 .good-card__term {
   .font-set(15px, 400, 20px, @gray4);
+  margin: 0;
+  margin-bottom: 20px;
+  width: 97px;
 }
 
 .good-card__term-description {
   .font-set(15px, 400, 20px, @gray4);
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100px;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+}
+
+.good-card__image-wrapper {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 24px;
 }
 
 .good-card__price {
   .font-set(17px, 700, 24px, @gray4);
+  text-align: center;
+  margin: 0 66px;
 }
 
 .good-card__button {
   .font-set(17px, 700, 20px, @gray4);
+  display: block;
+  margin-top: 26px;
+  margin-right: 1px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  text-align: center;
 }
