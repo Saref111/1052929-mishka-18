@@ -1,9 +1,15 @@
 .cute-things {
+  width: 100%;
   padding-top: 70px;
   background-color: #f8f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -15px;
+  background-position: center -17px;
+}
+
+.cute-things__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .cute-things__title {
@@ -13,16 +19,23 @@
   text-align: center;
 }
 
-.cute-things__list{
+.cute-things__list {
   .list-reset();
 }
 
-.cute-things__item{
-  padding: 25px;
+.cute-things__item {
+  height: 103px;
 }
 
 .cute-things__link {
+  display: inline-block;
+  width: 320px;
+  padding: 25px;
+  padding-left: 26px;
+  padding-right: 105px;
+  padding-bottom: 30px;
   .font-set(19px, 700, 24px, #ffffff);
+  letter-spacing: 0.8px;
 
   &--lamp {
     background-color: @aqua-light;
