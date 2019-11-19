@@ -6,6 +6,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 30px;
+  padding-bottom: 0;
 }
 
 .about__title {
@@ -22,6 +23,10 @@
   width: 260px;
   margin-bottom: 83px;
   padding-right: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--flower {
     padding-right: 65px;
@@ -41,6 +46,7 @@
   .about__wrapper {
     width: 768px;
     padding: 50px;
+    padding-bottom: 0;
   }
 
   .about__title {
@@ -92,6 +98,41 @@
     &--gift {
       order: 6;
       padding-right: 0;
+    }
+
+    &:last-child,
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__wrapper {
+    width: 1150px;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 60px;
+  }
+
+  .about__title {
+    .font-set(53px, 700, 57px);
+    margin-bottom: 100px;
+  }
+
+  .about__item {
+    margin-bottom: 111px;
+
+    &--flower {
+      margin-right: 100px;
+    }
+
+    &--money {
+      margin-right: 100px;
+    }
+
+    &--heart {
+      margin-right: 100px;
     }
   }
 }
