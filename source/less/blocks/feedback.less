@@ -1,15 +1,12 @@
-.feedback {
-  background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 0 bottom;
-}
-
 .feedback__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 30px;
   padding-top: 53px;
   padding-bottom: 52px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
 }
 
 .feedback__title {
@@ -68,6 +65,9 @@
     padding-bottom: 95px;
     display: flex;
     flex-wrap: wrap;
+    background-image: url("../../img/bg-zigzag-line.svg"), url("../../img/review@1x.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 bottom, 0 85px;
   }
 
   .feedback__title {
@@ -115,5 +115,34 @@
   .feedback__previous,
   .feedback__next {
     border: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .feedback__wrapper {
+    width: 1050px;
+    padding-left: 175px;
+    padding-right: 0;
+    padding-top: 161px;
+    padding-bottom: 150px;
+    background-position: 0 bottom, 0 90px;
+  }
+
+  .feedback__title {
+    .font-set(53px, 700, 57px);
+    margin-left: -3px;
+  }
+
+  .feedback__link {
+    margin-top: 10px;
+  }
+
+  .feedback__text {
+    padding-right: 105px;
+    margin-bottom: 38px;
+  }
+
+  .feedback__author {
+    letter-spacing: -0.5px;
   }
 }
