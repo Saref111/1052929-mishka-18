@@ -134,3 +134,61 @@
     padding-bottom: 14px;
   }
 }
+
+@media (min-width: 1150px) {
+  .contact__wrapper {
+    width: 1150px;
+    height: 632px;
+    padding-top: 68px;
+    padding-left: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contact__title {
+    .font-set(53px, 700, 57px);
+    width: 270px;
+    margin-top: 72px;
+    margin-bottom: 49px;
+    letter-spacing: -0.4px;
+  }
+
+  .contact__list {
+    width: 309px;
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .contact__term {
+    margin-right: 25px;
+  }
+
+  .contact__description {
+    .font-set(17px, 400, 30px, @gray4);
+    margin: 0;
+
+    &:nth-of-type(1) {
+      margin: 0;
+    }
+
+    &:nth-of-type(2) {
+      padding: 0;
+      width: 230px;
+    }
+  }
+
+  .contact__map-wrapper {
+    order: 1;
+    margin-right: 13px;
+  }
+
+  .contact__map {
+    width: 525px;
+  }
+
+  .contact__link {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+}
