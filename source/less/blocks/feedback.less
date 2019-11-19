@@ -1,20 +1,61 @@
+.feedback {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+}
+
+.feedback__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 53px;
+  padding-bottom: 52px;
+}
+
 .feedback__title {
   .font-set(25px, 700, 30px);
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .feedback__text {
   .font-set(15px, 400, 30px, @gray4);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 .feedback__author {
   .font-set(17px, 700, 30px);
   font-style: normal;
+  letter-spacing: 0.1px;
 }
 
 .feedback__author-link {
   .font-set(17px, 400, 30px);
+  letter-spacing: 0;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.feedback__buttons {
+  width: 260px;
+  height: 52px;
+  display: flex;
+  margin-bottom: 39px;
+}
+
+.feedback__previous,
+.feedback__next {
+  border: 1px solid @gray1;
+  flex-grow: 1;
 }
 
 .feedback__link {
   .font-set(18px, 700, 20px, @gray4);
+  width: 260px;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-align: center;
 }
