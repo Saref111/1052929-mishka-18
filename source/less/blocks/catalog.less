@@ -14,7 +14,29 @@
 }
 
 .catalog__item {
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 29px;
+  }
+
+  &:last-child dl {
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog__wrapper {
+    width: 768px;
+    padding: 50px;
+    padding-top: 78px;
+  }
+
+  .catalog__item {
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
+
+    &:nth-child(2) h2 {
+      margin-bottom: 8px;
+    }
   }
 }
