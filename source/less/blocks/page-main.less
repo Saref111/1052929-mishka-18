@@ -3,10 +3,40 @@
 }
 
 .page-main__title {
-  background-color: #f1f1f1;
+  background-color: @gray2;
   .font-set(27px, 700, 30px);
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 75px;
+  text-align: center;
 }
 
 .page-main__text {
   .font-set(13px, 400, 24px, @gray4);
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    margin-top: -71px;
+  }
+
+  .page-main__title {
+    .font-set(43px, 700, 50px);
+    width: 768px;
+    padding-top: 97px;
+    padding-bottom: 80px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-main__title {
+    .font-set(53px, 700, 57px);
+    width: 1150px;
+    padding-top: 95px;
+    padding-bottom: 105px;
+  }
 }
