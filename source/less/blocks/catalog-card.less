@@ -1,11 +1,50 @@
+.catalog-card {
+  border: 1px solid @gray1;
+  padding-bottom: 27px;
+}
+
+.catalog-card__img-wrapper {
+  height: 196px;
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+.catalog-card__title {
+  margin: 0;
+  margin-left: 29px;
+  margin-right: 29px;
+  margin-bottom: 9px;
+}
+
 .catalog-card__title a {
-  .font-set(17, 700, 24px);
+  .font-set(17px, 700, 20px);
 }
 
 .catalog-card__info {
   .font-set(13px, 400, 30px, @gray4);
+  margin: 0;
+  margin-left: 28px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-card__info dt,
+.catalog-card__info dd {
+  margin: 0;
+  margin-right: 3px;
+}
+
+.catalog-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 27px;
+  padding-top: 22px;
+  border-top: 1px solid @gray1;
 }
 
 .catalog-card__price {
   .font-set(15px, 700, 24px);
+  letter-spacing: 0.8px;
+  display: inline-block;
 }
