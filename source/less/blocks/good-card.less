@@ -1,28 +1,169 @@
 .good-card__title {
-  .font-set(25px, 700, 30px);
+  .font-set(25px, 700, 27px);
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .good-card__popular {
-  .font-set(17px, 700, 20px,#63d1bb);
+  display: block;
+  margin-bottom: 24px;
+  .font-set(17px, 700, 20px,@aqua-light);
   text-transform: uppercase;
 }
 
 .good-card__description {
-  .font-set(15px, 400, 20px, #444444);
+  .font-set(15px, 400, 24px, @gray4);
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.good-card__info-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
 }
 
 .good-card__term {
-  .font-set(15px, 400, 20px, #444444);
+  .font-set(15px, 400, 20px, @gray4);
+  margin: 0;
+  margin-bottom: 20px;
+  width: 97px;
 }
 
 .good-card__term-description {
-  .font-set(15px, 400, 20px, #444444);
+  .font-set(15px, 400, 20px, @gray4);
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100px;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+}
+
+.good-card__image-wrapper {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 24px;
 }
 
 .good-card__price {
-  .font-set(17px, 700, 24px, #444444);
+  .font-set(17px, 700, 24px, @gray4);
+  text-align: center;
+  margin: 0 66px;
 }
 
 .good-card__button {
-  .font-set(17px, 700, 20px, #444444);
+  .font-set(17px, 700, 20px, @gray4);
+  display: block;
+  margin-top: 26px;
+  margin-right: 1px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .good-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 515px;
+    width: 668px;
+  }
+
+  .good-card__title {
+    width: 425px;
+    margin-bottom: 49px;
+    .font-set(43px, 700, 50px);
+    letter-spacing: -0.2px;
+  }
+
+  .good-card__popular {
+    order: 1;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 19px;
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 18px;
+  }
+
+  .good-card__description {
+    width: 280px;
+    margin-bottom: 43px;
+    .font-set(17px, 400, 30px);
+  }
+
+  .good-card__info-list {
+    width: 260px;
+    margin-bottom: 47px;
+  }
+
+  .good-card__price {
+    width: 260px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 5px;
+    .font-set(20px, 700, 24px, @gray4);
+  }
+
+  .good-card__button {
+    .font-set(17px, 700, 20px, @gray4);
+    display: block;
+    width: 292px;
+    margin-top: 35px;
+    margin-left: -2px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    text-align: center;
+  }
+
+  .good-card__image-wrapper {
+    width: 260px;
+    height: 315px;
+    order: 2;
+    margin-left: -158px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .good-card {
+    position: relative;
+    height: 673px;
+  }
+
+  .good-card__title {
+    .font-set(53px, 700, 57px);
+    white-space: nowrap;
+    margin-top: 54px;
+    margin-left: -3px;
+  }
+
+  .good-card__popular {
+    position: absolute;
+    left: -137px;
+    top: 59px;
+  }
+
+  .good-card__description {
+    margin-bottom: 56px;
+  }
+
+  .good-card__info-list {
+    margin-bottom: 101px;
+  }
+
+  .good-card__price {
+    padding-left: 7px;
+  }
+
+  .good-card__button {
+    margin-left: 0;
+  }
+
+  .good-card__image-wrapper {
+    margin-top: 3px;
+    margin-left: -130px;
+  }
 }

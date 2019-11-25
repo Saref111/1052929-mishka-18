@@ -2,11 +2,65 @@
   background-color: #ffffff;
 }
 
+.page-main__title-wrapper {
+  background-color: @gray2;
+}
+
 .page-main__title {
-  background-color: #f1f1f1;
   .font-set(27px, 700, 30px);
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 75px;
+  text-align: center;
 }
 
 .page-main__text {
-  .font-set(13px, 400, 24px, #444444);
+  .font-set(13px, 400, 24px, @gray4);
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    margin-top: -71px;
+  }
+
+  .page-main__title-wrapper {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+  }
+
+  .page-main__title {
+    .font-set(43px, 700, 50px);
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 82px;
+  }
+
+  .page-main__text {
+    .font-set(17px, 400, 30px, @gray4);
+    width: 668px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-main__title {
+    .font-set(53px, 700, 57px);
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 105px;
+  }
+
+  .page-main__text {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 3px;
+  }
 }

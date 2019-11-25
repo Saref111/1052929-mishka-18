@@ -1,7 +1,138 @@
 .about {
-  .font-set();
+  .font-set(17px, 700, 20px, #000000);
+}
+
+.about__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
 .about__title {
-  .font-set(25px, 700, 30px);
+  margin: 0;
+  margin-bottom: 88px;
+  .font-set(25px, 700, 27px, #000000);
+}
+
+.about__list {
+  .list-reset();
+}
+
+.about__item {
+  width: 260px;
+  margin-bottom: 83px;
+  padding-right: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--flower {
+    padding-right: 65px;
+  }
+
+  &--heart {
+    padding-right: 75px;
+  }
+
+  &--rocket {
+    padding-right: 0;
+    letter-spacing: 0.1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__wrapper {
+    width: 768px;
+    padding: 50px;
+    padding-bottom: 0;
+  }
+
+  .about__title {
+    .font-set(43px, 700, 50px);
+    letter-spacing: -0.2px;
+    margin-left: -5px;
+    margin-bottom: 105px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    .font-set(20px, 700, 22px);
+    width: 250px;
+    padding: 0;
+    padding-right: 20px;
+    margin-bottom: 110px;
+
+    &--flower {
+      order: 1;
+      margin-right: 83px;
+    }
+
+    &--money {
+      order: 3;
+      margin-right: 83px;
+      padding-right: 0;
+    }
+
+    &--heart {
+      order: 5;
+      margin-right: 83px;
+    }
+
+    &--strings {
+      order: 2;
+      padding-right: 0;
+    }
+
+    &--rocket {
+      order: 4;
+      padding-right: 0;
+      width: 300px;
+    }
+
+    &--gift {
+      order: 6;
+      padding-right: 0;
+    }
+
+    &:last-child,
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__wrapper {
+    width: 1150px;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 60px;
+  }
+
+  .about__title {
+    .font-set(53px, 700, 57px);
+    margin-bottom: 100px;
+  }
+
+  .about__item {
+    margin-bottom: 111px;
+
+    &--flower {
+      margin-right: 100px;
+    }
+
+    &--money {
+      margin-right: 100px;
+    }
+
+    &--heart {
+      margin-right: 100px;
+    }
+  }
 }

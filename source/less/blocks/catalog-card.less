@@ -1,11 +1,138 @@
+.catalog-card {
+  border: 1px solid @gray1;
+  padding-bottom: 27px;
+}
+
+.catalog-card__img-wrapper {
+  height: 196px;
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+.catalog-card__title {
+  margin: 0;
+  margin-left: 29px;
+  margin-right: 29px;
+  margin-bottom: 9px;
+}
+
 .catalog-card__title a {
-  .font-set(17, 700, 24px);
+  .font-set(17px, 700, 20px);
 }
 
 .catalog-card__info {
-  .font-set(13px, 400, 30px, #444444);
+  .font-set(13px, 400, 30px, @gray4);
+  margin: 0;
+  margin-left: 28px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-card__info dt,
+.catalog-card__info dd {
+  margin: 0;
+  margin-right: 3px;
+}
+
+.catalog-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 27px;
+  padding-top: 22px;
+  border-top: 1px solid @gray1;
 }
 
 .catalog-card__price {
   .font-set(15px, 700, 24px);
+}
+
+@media (min-width: 768px) {
+  .catalog-card {
+    display: flex;
+    padding: 0;
+  }
+
+  .catalog-card__img-wrapper {
+    height: 333px;
+    width: 334px;
+    margin: 0;
+  }
+
+  .catalog-card__info-wrapper {
+    padding-top: 21px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-card__title {
+    margin: 0;
+    margin-left: 27px;
+    margin-bottom: 5px;
+    width: 240px;
+  }
+
+  .catalog-card__title a {
+    .font-set(20px, 700, 24px);
+  }
+
+  .catalog-card__info {
+    .font-set(15px, 400, 30px, @gray4);
+    margin-left: 26px;
+  }
+
+  .catalog-card__info dt,
+  .catalog-card__info dd {
+    margin-right: 4px;
+  }
+
+  .catalog-card__price-wrapper {
+    margin-top: auto;
+    margin-left: 31px;
+    width: 268px;
+    height: 74px;
+    border-top: 1px solid @gray1;
+  }
+
+  .catalog-card__price {
+    .font-set(17px, 700, 24px);
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-card {
+    display: block;
+    min-height: 659px;
+  }
+
+  .catalog-card__img-wrapper {
+    height: 463px;
+    width: 314px;
+    margin: 0;
+  }
+
+  .catalog-card__info-wrapper {
+    min-height: 195px;
+  }
+
+  .catalog-card__title {
+    margin-bottom: 5px;
+  }
+
+  .catalog-card__title a {
+    .font-set(20px, 700, 20px);
+  }
+
+  .catalog-card__info {
+    line-height: 31px;
+    width: 220px;
+    margin-bottom: 0;
+  }
+
+  .catalog-card__price-wrapper {
+    margin-left: 25px;
+    margin-right: 0;
+    padding-top: 21px;
+    width: 257px;
+  }
 }

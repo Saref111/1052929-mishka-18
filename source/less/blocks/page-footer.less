@@ -1,3 +1,52 @@
 .page-footer {
   background-color: #f1f1f1;
 }
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social-list {
+  .list-reset();
+  margin: 0 auto;
+  margin-bottom: 41px;
+}
+
+.page-footer__academy {
+  margin-left: 68px;
+  white-space: nowrap;
+}
+
+.page-footer__academy img {
+  width: 28px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 750px;
+    padding-right: 42px;
+    padding-left: 50px;
+    padding-top: 51px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1136px;
+  }
+}
