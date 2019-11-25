@@ -121,14 +121,14 @@
   .order-form__wrapper {
     padding: 0;
     padding-bottom: 50px;
-    width: 768px;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .order-form__set {
     width: 100%;
-
     &--color {
       background-color: @gray1;
     }
@@ -147,6 +147,8 @@
     padding-top: 67px;
     padding-bottom: 66px;
     display: flex;
+    width: 768px;
+    margin: 0 auto;
 
     &--color {
       padding-top: 65px;
@@ -303,6 +305,12 @@
     }
   }
 
+  .order-form__button-star-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+  }
+
   .order-form__star {
     order: 2;
     display: block;
@@ -326,13 +334,14 @@
   .order-form__wrapper {
     padding: 0;
     padding-bottom: 50px;
-    width: 1150px;
+    width: 100%;
   }
 
   .order-form__set-wrapper {
     padding-left: 110px;
     padding-top: 67px;
     padding-bottom: 66px;
+    width: 1150px;
 
     &--color {
       padding-top: 65px;
@@ -445,6 +454,10 @@
         width: 700px;
       }
     }
+  }
+
+  .order-form__button-star-wrapper {
+    width: 1150px;
   }
 
   .order-form__star {
