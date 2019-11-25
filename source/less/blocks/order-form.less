@@ -25,7 +25,7 @@
   padding-bottom: 43px;
 
   &--name {
-    padding-top: 25px;
+    padding-top: 28px;
     padding-bottom: 30px;
   }
 
@@ -34,13 +34,17 @@
     padding-bottom: 30px;
   }
 
+  &--color {
+    padding-top: 36px;
+  }
+
   &--email {
     padding-top: 17px;
     padding-bottom: 30px;
   }
 
   &--message {
-    padding-top: 23px;
+    padding-top: 25px;
     padding-bottom: 0;
   }
 }
@@ -50,7 +54,7 @@
     margin-left: 63px;
 
     &:not(:last-child) {
-      margin-bottom: 22px;
+      margin-bottom: 23px;
     }
   }
 
@@ -84,6 +88,11 @@
   padding-top: 5px;
   padding-bottom: 16px;
   width: 260px;
+}
+
+.order-form__item input[type="checkbox"],
+.order-form__item input[type="radio"] {
+  width: 0;
 }
 
 .order-form__item input::placeholder,
@@ -144,11 +153,12 @@
   }
 
   .order-form__set-wrapper {
-    padding-left: 52px;
+    padding-left: 42px;
     padding-top: 67px;
     padding-bottom: 66px;
     display: flex;
-    width: 768px;
+    width: 750px;
+    max-width: 100%;
     margin: 0 auto;
 
     &--color {
@@ -308,6 +318,7 @@
 
   .order-form__button-star-wrapper {
     width: 768px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
   }
@@ -339,10 +350,10 @@
   }
 
   .order-form__set-wrapper {
-    padding-left: 110px;
+    padding-left: 105px;
     padding-top: 67px;
     padding-bottom: 66px;
-    width: 1150px;
+    width: 1136px;
 
     &--color {
       padding-top: 65px;
