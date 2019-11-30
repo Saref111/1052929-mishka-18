@@ -68,6 +68,14 @@
     background-image: url("../img/bg-zigzag-line.svg"), url("../img/review@1x.jpg");
     background-repeat: repeat-x, no-repeat;
     background-position: 0 bottom, 0 85px;
+    background-size: auto, 350px 457px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-zigzag-line.svg"), url("../img/review@2x.jpg");
+      background-repeat: repeat-x, no-repeat;
+      background-position: 0 bottom, 0 85px;
+      background-size: auto, 350px 457px;
+    }
   }
 
   .feedback__title {
