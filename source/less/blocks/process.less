@@ -5,7 +5,6 @@
 .process__wrapper {
   width: 260px;
   margin: 0 auto;
-  padding: 30px;
   padding-top: 23px;
   padding-bottom: 31px;
   border: 1px solid @gray1;
@@ -14,20 +13,36 @@
 .process__title {
   .font-set(17px, 700, 24px);
   margin: 0;
-  margin-left: 60px;
+  margin-left: 90px;
   margin-bottom: 25px;
 }
 
 .process__video-wrapper {
+  position: relative;
   height: 150px;
   width: 260px;
   margin-bottom: 26px;
 }
 
+.process__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  width: 100px;
+  height: 77px;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  background-image: url("../../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .process__description {
   .font-set(13px, 400, 24px, @gray4);
   margin: 0;
-  margin-left: 3px;
+  margin-left: 33px;
   margin-bottom: 25px;
   width: 190px;
 }
