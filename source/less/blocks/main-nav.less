@@ -42,6 +42,17 @@
   &:nth-child(8) {
     display: none;
   }
+
+  &--cart {
+    position: relative;
+
+    & svg {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      opacity: 0.2;
+    }
+  }
 }
 
 .main-nav__link {
@@ -116,6 +127,11 @@
 
     &--search span {
       display: none;
+    }
+
+    &--cart svg {
+      top: 35px;
+      left: 32px;
     }
   }
 }
