@@ -9,7 +9,7 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
-    <script defer src="bower_components/svgxuse/svgxuse.js"></script>
+    <script type="text/javascript" defer src="../node_modules/svgxuse/svgxuse.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -39,7 +39,12 @@
               <a href="#" class="main-nav__link"><span>Поиск по сайту</span></a>
             </li>
             <li class="main-nav__item main-nav__item--cart">
-              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+              <a href="#" class="main-nav__link">
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                </svg>
+                <span>Корзина: пока пуста</span>
+              </a>
             </li>
             <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Новые поступления</a>

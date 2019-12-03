@@ -8,8 +8,8 @@
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async></script>
-    <script defer src="bower_components/svgxuse/svgxuse.js"></script>
+    <script type="text/javascript" src="js/picturefill.min.js" async></script>
+    <script type="text/javascript" defer src="../node_modules/svgxuse/svgxuse.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -39,7 +39,12 @@
               <a href="#" class="main-nav__link"><span>Поиск по сайту</span></a>
             </li>
             <li class="main-nav__item main-nav__item--cart">
-              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+              <a href="#" class="main-nav__link">
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                </svg>
+                <span>Корзина: пока пуста</span>
+              </a>
             </li>
             <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Новые поступления</a>
@@ -80,7 +85,11 @@
                             </dl>
                             <div class="catalog-card__price-wrapper">
                               <b class="catalog-card__price">1 200 руб.</b>
-                              <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину"></a>
+                              <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину">
+                                <svg width="20" height="19">
+                                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                                </svg>
+                              </a>
                             </div>
                           </div>
                       </article>
@@ -106,7 +115,11 @@
                             </dl>
                             <div class="catalog-card__price-wrapper">
                               <b class="catalog-card__price">690 руб.</b>
-                              <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину"></a>
+                              <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину">
+                                <svg width="20" height="19">
+                                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                                </svg>
+                              </a>
                             </div>
                           </div>
                       </article>
@@ -132,7 +145,11 @@
                             </dl>
                             <div class="catalog-card__price-wrapper">
                               <b class="catalog-card__price">1 500 руб.</b>
-                              <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину"></a>
+                              <a class="catalog-card__cart" href="#" aria-label="Добавить в корзину">
+                                <svg width="20" height="19">
+                                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                                </svg>
+                              </a>
                             </div>
                           </div>
                       </article>
