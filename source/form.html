@@ -96,28 +96,64 @@
                 <legend class="order-form__legend order-form__legend--color">Цвет</legend>
                 <ul class="order-form__list order-form__list--color">
                   <li class="order-form__item order-form__item--color">
-                    <input class="visually-hidden" type="checkbox" name="color" id="white" class="visually-hidden">
-                    <label for="white">Белый</label>
+                    <label for="white">Белый
+                      <div class="order-form__checkbox">
+                        <input class="visually-hidden" type="checkbox" name="color" id="white" class="visually-hidden" checked>
+                        <svg class="order-form__check" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#checked-icon">
+                        </svg>
+                      </div>
+                    </label>
                   </li>
                   <li class="order-form__item order-form__item--color">
-                    <input class="visually-hidden" type="checkbox" name="color" id="gray" class="visually-hidden">
-                    <label for="gray">Серый</label>
+                    <label for="gray">Серый
+                      <div class="order-form__checkbox">
+                        <input class="visually-hidden" type="checkbox" name="color" id="gray" class="visually-hidden" checked>
+                        <svg class="order-form__check" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#checked-icon">
+                        </svg>
+                      </div>
+                    </label>
                   </li>
                   <li class="order-form__item order-form__item--color">
-                    <input class="visually-hidden" type="checkbox" name="color" id="tiffany" class="visually-hidden">
-                    <label for="tiffany">«Тиффани»</label>
+                    <label for="tiffany">«Тиффани»
+                      <div class="order-form__checkbox">
+                        <input class="visually-hidden" type="checkbox" name="color" id="tiffany" class="visually-hidden">
+                        <svg class="order-form__check" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#checked-icon">
+                        </svg>
+                      </div>
+                    </label>
                   </li>
                   <li class="order-form__item order-form__item--color">
-                    <input class="visually-hidden" type="checkbox" name="color" id="black" class="visually-hidden">
-                    <label for="black">Черный</label>
+                    <label for="black">Черный
+                      <div class="order-form__checkbox">
+                        <input class="visually-hidden" type="checkbox" name="color" id="black" class="visually-hidden">
+                        <svg class="order-form__check" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#checked-icon">
+                        </svg>
+                      </div>
+                    </label>
                   </li>
                   <li class="order-form__item order-form__item--color">
-                    <input class="visually-hidden" type="checkbox" name="color" id="pink" class="visually-hidden">
-                    <label for="pink">Розовый</label>
+                    <label for="pink">Розовый
+                      <div class="order-form__checkbox">
+                        <input class="visually-hidden" type="checkbox" name="color" id="pink" class="visually-hidden">
+                        <svg class="order-form__check" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#checked-icon">
+                        </svg>
+                      </div>
+                    </label>
                   </li>
                   <li class="order-form__item order-form__item--color">
-                    <input class="visually-hidden" type="checkbox" name="color" id="orange" class="visually-hidden">
-                    <label for="orange">Оранжевый</label>
+                    <label for="orange">Оранжевый
+                      <div class="order-form__checkbox">
+                        <input class="visually-hidden" type="checkbox" name="color" id="orange" class="visually-hidden">
+                        <svg class="order-form__check" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#checked-icon">
+                        </svg>
+                      </div>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -147,6 +183,11 @@
                 <ul class="order-form__list order-form__list--phone">
                   <li class="order-form__item order-form__item--phone">
                     <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                    <label class="order-form__item-icon order-form__item-icon--phone" for="phone">
+                      <svg width="25" height="24">
+                        <use xlink:href="img/sprite.svg#phone-icon">
+                      </svg>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -157,6 +198,11 @@
                 <ul class="order-form__list order-form__list--email">
                   <li class="order-form__item order-form__item--email">
                       <input type="email" name="email" id="email" placeholder="Ваш Email*">
+                      <label class="order-form__item-icon order-form__item-icon--email" for="email">
+                        <svg width="32" height="37">
+                          <use xlink:href="img/sprite.svg#mail-icon">
+                        </svg>
+                      </label>
                   </li>
                 </ul>
               </div>

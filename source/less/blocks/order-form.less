@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 30px;
   padding-top: 24px;
-  padding-bottom: 56px;
+  padding-bottom: 54px;
 }
 
 .order-form__set {
@@ -17,25 +17,30 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-top: 1px;
+
+  &--color {
+    margin-top: 2px;
+  }
 }
 
 .order-form__list {
   .list-reset();
-  padding-top: 33px;
-  padding-bottom: 43px;
+  padding-top: 31px;
+  padding-bottom: 40px;
 
   &--name {
-    padding-top: 28px;
+    padding-top: 26px;
     padding-bottom: 30px;
   }
 
   &--phone {
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 30px;
   }
 
   &--color {
-    padding-top: 36px;
+    padding-top: 35px;
   }
 
   &--email {
@@ -44,12 +49,14 @@
   }
 
   &--message {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 0;
   }
 }
 
 .order-form__item {
+  position: relative;
+
   &--type {
     margin-left: 63px;
 
@@ -108,14 +115,52 @@
 .order-form__item textarea {
   border: 2px solid #000000;
   padding: 15px;
+  padding-top: 11px;
   width: 260px;
   height: 142px;
+}
+
+.order-form__checkbox {
+  position: absolute;
+  width: 40px;
+  height: 39px;
+  padding-top: 10px;
+  padding-left: 7px;
+  border: 2px solid @gray4;
+  top: -11px;
+  left: -63px;
+}
+
+.order-form__check {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+
+.order-form__item input:checked ~ .order-form__check {
+  display: block;
+}
+
+.order-form__item-icon {
+  position: absolute;
+  opacity: 0.2;
+
+  &--phone {
+    top: 1px;
+    right: 7px;
+  }
+
+  &--email {
+    top: -2px;
+    right: 4px;
+  }
 }
 
 .order-form__star {
   .font-set(14px, 400, 16px);
   margin: 0;
-  margin-top: 11px;
+  margin-top: 10px;
   margin-bottom: 31px;
 }
 
