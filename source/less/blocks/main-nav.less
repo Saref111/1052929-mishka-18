@@ -8,24 +8,30 @@
   position: absolute;
   top: 28px;
   right: 32px;
+  cursor: pointer;
 
   &--opened {
     width: 24px;
     height: 23px;
 
-    & .main-nav__button-icon-closed {
+    & .main-nav__button-icon-open {
       display: none;
     }
   }
 
-  /* DON'T FORGET TO FINISH
   &--closed {
+    width: 24px;
+    height: 23px;
 
-    & .main-nav__button-icon-opened {
+    & .main-nav__button-icon-close {
       display: none;
     }
   }
-  */
+}
+
+.main-nav__button-icon-close,
+.main-nav__button-icon-open {
+  fill: #231F20;
 }
 
 .main-nav__wrapper {

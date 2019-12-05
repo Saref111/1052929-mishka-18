@@ -27,7 +27,7 @@
   .catalog__wrapper {
     width: 768px;
     padding: 50px;
-    padding-top: 78px;
+    padding-top: 79px;
     padding-bottom: 51px;
   }
 
@@ -36,15 +36,20 @@
       margin-bottom: 53px;
     }
 
-    &:nth-child(2) h2 {
-      margin-bottom: 8px;
+    &:nth-child(3) h2 {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(3) dl {
+      padding-top: 4px;
+      margin-bottom: -1px;
     }
   }
 }
 
 @media (min-width: 1150px) {
   .catalog {
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   .catalog__wrapper {
@@ -68,5 +73,9 @@
     &:nth-child(2) h2 {
       margin-bottom: 5px;
     }
+  }
+
+  &:last-child dl {
+    margin-bottom: 0px;
   }
 }
