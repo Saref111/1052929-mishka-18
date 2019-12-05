@@ -208,7 +208,7 @@
 
     &--color {
       padding-top: 65px;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
     }
 
     &--name {
@@ -274,7 +274,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 57px;
+      margin-bottom: 56px;
     }
 
     &--type {
@@ -295,25 +295,25 @@
       display: flex;
 
       &:not(:last-child) {
-        margin-bottom: 39px;
+        margin-bottom: 38px;
       }
 
       & label {
-        margin-right: 24px;
-      }
-
-      &:nth-child(2) label {
         margin-right: 25px;
       }
 
-      &:nth-child(3) label {
+      &:nth-child(2) label {
         margin-right: 27px;
+      }
+
+      &:nth-child(3) label {
+        margin-right: 28px;
       }
 
       & input {
         width: 375px;
-        padding-top: 0;
-        padding-left: 16px;
+        padding-top: 1px;
+        padding-left: 15px;
 
         &::placeholder {
           .font-set(19px, 400, 20px, @gray4);
@@ -328,7 +328,7 @@
     &--phone {
       & input {
         padding-top: 0;
-        padding-left: 15px;
+        padding-left: 16px;
         padding-bottom: 15px;
         width: 501px;
         background-color: @gray1;
@@ -338,7 +338,7 @@
     &--email {
       & input {
         padding-top: 0;
-        padding-left: 15px;
+        padding-left: 16px;
         padding-bottom: 16px;
         width: 501px;
         background-color: @gray1;
@@ -358,6 +358,32 @@
       & textarea::placeholder {
         .font-set(19px, 400, 20px);
       }
+    }
+  }
+
+  .order-form__checkbox {
+    width: 54px;
+    height: 52px;
+    top: -14px;
+    left: -80px;
+  }
+
+  .order-form__check {
+    width: 33px;
+    height: 22px;
+    top: 13px;
+    left: 8px;
+  }
+
+  .order-form__item-icon {
+    &--phone {
+      top: -3px;
+      right: 25px;
+    }
+
+    &--email {
+      top: -4px;
+      right: 22px;
     }
   }
 
@@ -395,7 +421,7 @@
   }
 
   .order-form__set-wrapper {
-    padding-left: 105px;
+    padding-left: 103px;
     padding-top: 67px;
     padding-bottom: 66px;
     width: 1136px;
@@ -406,7 +432,8 @@
     }
 
     &--name {
-      padding-top: 63px;
+      padding-top: 65px;
+      padding-left: 105px;
       padding-bottom: 50px;
     }
 
@@ -435,11 +462,11 @@
     }
 
     &--color {
-      margin-right: 89px;
+      margin-right: 90px;
     }
 
     &--name {
-      margin-right: 74px;
+      margin-right: 72px;
     }
 
     &--phone {
@@ -479,7 +506,7 @@
 
       &:nth-child(odd),
       &:nth-child(even) {
-        margin-right: 145px;
+        margin-right: 143px;
       }
     }
 
@@ -510,6 +537,18 @@
       & textarea {
         width: 700px;
       }
+    }
+  }
+
+  .order-form__item-icon {
+    &--phone {
+      top: -3px;
+      right: 210px;
+    }
+
+    &--email {
+      top: -4px;
+      right: 205px;
     }
   }
 
