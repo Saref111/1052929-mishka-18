@@ -7,15 +7,25 @@
   background-color: transparent;
   position: absolute;
   top: 28px;
-  right: 30px;
-}
+  right: 32px;
 
-.main-nav__toggle--open {
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu-close.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  &--opened {
+    width: 24px;
+    height: 23px;
+
+    & .main-nav__button-icon-closed {
+      display: none;
+    }
+  }
+
+  /* DON'T FORGET TO FINISH
+  &--closed {
+
+    & .main-nav__button-icon-opened {
+      display: none;
+    }
+  }
+  */
 }
 
 .main-nav__wrapper {
@@ -51,6 +61,19 @@
       left: 30px;
       top: 30px;
       opacity: 0.2;
+      fill: #231f20;
+    }
+  }
+
+  &--search {
+    position: relative;
+
+    & svg {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      opacity: 0.2;
+      fill: #231f20;
     }
   }
 }
@@ -131,6 +154,11 @@
 
     &--cart svg {
       top: 35px;
+      left: 32px;
+    }
+
+    &--search svg {
+      top: 37px;
       left: 32px;
     }
   }
