@@ -12,6 +12,10 @@
   margin-bottom: 25px;
 }
 
+.contact__flag-icon {
+  display: none;
+}
+
 .contact__list {
   padding: 0;
   margin: 0 30px;
@@ -56,6 +60,7 @@
 }
 
 .contact__map-wrapper {
+  position: relative;
   height: 457px;
   width: 320px;
   margin-bottom: 39px;
@@ -65,6 +70,14 @@
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  & svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -22px;
+    margin-top: -82px;
   }
 }
 
@@ -92,6 +105,7 @@
   }
 
   .contact__info-wrapper {
+    position: relative;
     width: 751px;
     margin: 0 auto;
   }
@@ -100,6 +114,13 @@
     .font-set(43px, 700, 50px);
     margin-left: 38px;
     margin-bottom: 50px;
+  }
+
+  .contact__flag-icon {
+    display: block;
+    position: absolute;
+    top: -14px;
+    right: 45px;
   }
 
   .contact__list {
@@ -145,6 +166,11 @@
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
     }
+
+    & svg {
+      margin-left: -20px;
+      margin-top: -89px;
+    }
   }
 
   .contact__map {
@@ -186,6 +212,11 @@
     letter-spacing: -0.4px;
   }
 
+  .contact__flag-icon {
+    top: 65px;
+    left: -70px;
+  }
+
   .contact__list {
     width: 309px;
     margin-right: 0;
@@ -218,6 +249,11 @@
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
+    }
+
+    & svg {
+      margin-left: -25px;
+      margin-top: -83px;
     }
   }
 

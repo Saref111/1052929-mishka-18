@@ -34,6 +34,7 @@
 }
 
 .cute-things__link {
+  position: relative;
   display: inline-block;
   width: 320px;
   padding: 25px;
@@ -43,12 +44,28 @@
   .font-set(19px, 700, 24px, #ffffff);
   letter-spacing: 0.8px;
 
+  & svg {
+    position: absolute;
+    opacity: 0.5;
+    fill: #149080;
+  }
+
   &--lamp {
     background-color: @aqua-light;
+
+    & svg {
+      top: 23px;
+      right: 35px;
+    }
   }
 
   &--toy {
     background-color: @aqua-dark;
+
+    & svg {
+      top: 20px;
+      right: 26px;
+    }
   }
 }
 
@@ -97,6 +114,15 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: 0 107px;
+
+    &--lamp svg {
+      top: 30px;
+    }
+
+    &--toy svg {
+      top: 30px;
+      right: 33px;
+    }
   }
 }
 

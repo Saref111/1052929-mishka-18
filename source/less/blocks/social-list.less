@@ -1,15 +1,21 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 180px;
   justify-content: space-around;
 }
 
 .social-list__item {
-  width: 25px;
-  height: 30px;
-  background-color: blue;
+  &--instagram {
+    padding-top: 5px;
+    padding-right: 3px;
+  }
+
+  &--twitter {
+    padding-top: 5px;
+  }
 
   &:last-child {
-    margin-right: 5px;
+    margin-right: 4px;
   }
 }

@@ -3,11 +3,19 @@
 }
 
 .process__wrapper {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   padding-top: 23px;
   padding-bottom: 31px;
   border: 1px solid @gray1;
+}
+
+.process__video-icon {
+  position: absolute;
+  top: 27px;
+  left: 33px;
+  fill: @aqua-light;
 }
 
 .process__title {
@@ -77,6 +85,11 @@
     order: 1;
   }
 
+  .process__video-icon {
+    top: 491px;
+    left: 40px;
+  }
+
   .process__title {
     .font-set(20px, 700, 24px);
     letter-spacing: 0.2px;
@@ -119,18 +132,23 @@
     margin: 0;
   }
 
+  .process__video-icon {
+    top: 40px;
+    left: 762px;
+  }
+
   .process__title {
     .font-set(20px, 700, 24px);
     margin-left: 40px;
     margin-top: 94px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     width: 200px;
   }
 
   .process__description {
     width: 250px;
     margin-left: 40px;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   .process__button {
