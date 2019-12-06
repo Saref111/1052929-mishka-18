@@ -1,5 +1,20 @@
 .top-good {
+  position: relative;
   background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 8px;
+    top: 820px;
+    left: 50%;
+    transform: translateX(-50%) scale(1, -1);
+    background-color: transparent;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: space;
+    background-size: 100% 100%;
+  }
 }
 
 .top-good__wrapper {
@@ -7,18 +22,34 @@
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 42px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position-y: bottom;
 }
 
 @media (min-width: 768px) {
+  .top-good {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 751px;
+      height: 17px;
+      top: 605px;
+      background-color: transparent;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position-x: 30px;
+      background-size: 768px 100%;
+    }
+  }
+
   .top-good__wrapper {
     width: 751px;
     padding-right: 0;
     padding-left: 40px;
     padding-top: 40px;
     padding-bottom: 66px;
+    background-position-y: 300px;
+    background-position-x: 10px;
+    background-size: 100% 100%;
+
   }
 }
 
