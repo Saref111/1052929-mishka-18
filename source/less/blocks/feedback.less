@@ -1,14 +1,24 @@
 .feedback__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding: 30px;
   padding-top: 53px;
   padding-bottom: 52px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position-y: 340px;
-  background-position-x: 10px;
-  background-size: 100% 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 8px;
+    top: 677px;
+    left: 50%;
+    transform: translateX(-50%) scale(1, -1);
+    background-color: transparent;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: space;
+    background-size: 100% 100%;
+  }
 }
 
 .feedback__title {
@@ -67,16 +77,29 @@
     padding-bottom: 95px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../img/bg-zigzag-line.svg"), url("../img/review@1x.jpg");
-    background-repeat: repeat-x, no-repeat;
-    background-position: 0 bottom, -8px 85px;
-    background-size: auto, 350px 457px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -8px 85px;
+    background-size: 350px 457px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 751px;
+      height: 17px;
+      top: 609px;
+      background-color: transparent;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position-x: 30px;
+      background-size: 768px 100%;
+    }
 
     @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-zigzag-line.svg"), url("../img/review@2x.jpg");
-      background-repeat: repeat-x, no-repeat;
-      background-position: 0 bottom, -8px 85px;
-      background-size: auto, 350px 457px;
+      background-image: url("../img/review@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: -8px 85px;
+      background-size: 350px 457px;
     }
   }
 
@@ -136,7 +159,20 @@
     padding-right: 0;
     padding-top: 161px;
     padding-bottom: 150px;
-    background-position: 0 bottom, 0 90px;
+    background-position: 0 90px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      top: 614px;
+      background-color: transparent;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position-x: -52px;
+      background-size: 1050px 100%;
+    }
   }
 
   .feedback__title {

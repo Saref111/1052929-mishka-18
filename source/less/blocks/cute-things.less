@@ -146,6 +146,21 @@
     background-position: center 0;
     background-size: 1150px 746px;
 
+    &::before {
+      position: absolute;
+      z-index: 2;
+      content: "";
+      height: 40px;
+      width: 1133px;
+      top: 726px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 5px;
+      background-size: 1250px 100%;
+    }
+
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
       background-position: center 0;

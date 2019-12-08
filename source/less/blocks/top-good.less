@@ -54,8 +54,25 @@
 }
 
 @media (min-width: 1150px) {
+  .top-good {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      top: 775px;
+      background-color: transparent;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position-x: -52px;
+      background-size: 1050px 100%;
+    }
+  }
+
   .top-good__wrapper {
-    width: 1050px;
+    width: 1133px;
     padding: 0;
+    padding-left: 43px;
+    padding-right: 40px;
   }
 }
