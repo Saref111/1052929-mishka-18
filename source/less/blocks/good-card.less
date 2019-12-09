@@ -29,6 +29,16 @@
   margin: 0;
   margin-bottom: 20px;
   width: 97px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 260px;
+    top: 30px;
+    background-color: @gray1;
+  }
 }
 
 .good-card__term-description {
@@ -111,6 +121,10 @@
     margin-bottom: 47px;
   }
 
+  .good-card__term::before {
+    width: 291px;
+  }
+
   .good-card__price {
     order: 3;
     width: 160px;
@@ -156,6 +170,8 @@
 
   .good-card__title {
     .font-set(53px, 700, 57px);
+    position: relative;
+    z-index: 2;
     white-space: nowrap;
     margin: 0;
     width: 550px;
@@ -179,6 +195,11 @@
     margin: 0;
     margin-bottom: 56px;
     margin-top: 162px;
+  }
+
+  .good-card__term::before {
+    width: 291px;
+    top: 32px;
   }
 
   .good-card__info-list {

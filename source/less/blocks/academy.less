@@ -3,6 +3,17 @@
   white-space: nowrap;
   display: flex;
   padding-top: 5px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 260px;
+    height: 1px;
+    left: -38px;
+    top: -19px;
+    background-color: #e5e5e5;
+  }
 }
 
 .academy__copyright span {
@@ -18,5 +29,13 @@
 @media (min-width: 768px) {
   .academy__image {
     margin-top: 2px;
+  }
+
+  .academy__copyright::before {
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
   }
 }
