@@ -28,9 +28,21 @@
   }
 
   .page-main__title-wrapper {
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: 0 bottom;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 751px;
+      height: 30px;
+      top: 212px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: -8px bottom;
+      background-size: 768px 100%;
+    }
   }
 
   .page-main__title {
@@ -50,6 +62,20 @@
 }
 
 @media (min-width: 1150px) {
+  .page-main__title-wrapper {
+    &::before {
+      width: 1133px;
+      height: 50px;
+      top: 230px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: -8px bottom;
+      background-size: 1150px 100%;
+    }
+  }
+
   .page-main__title {
     .font-set(53px, 700, 57px);
     width: 100%;
