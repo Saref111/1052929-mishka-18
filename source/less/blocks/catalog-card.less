@@ -18,6 +18,7 @@
 
 .catalog-card__title a {
   .font-set(17px, 700, 20px);
+  .opacity();
 }
 
 .catalog-card__info {
@@ -45,6 +46,10 @@
 
 .catalog-card__price {
   .font-set(15px, 700, 24px);
+}
+
+.catalog-card__cart {
+  .opacity-text();
 }
 
 .catalog-card__cart svg {
@@ -107,6 +112,7 @@
 
 @media (min-width: 1150px) {
   .catalog-card {
+    .hover-shadow();
     display: block;
     min-height: 659px;
   }
