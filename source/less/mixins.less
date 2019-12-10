@@ -44,3 +44,24 @@
     }
   }
 }
+
+.opacity-footer() {
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+
+    & svg {
+      opacity: 1;
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    & svg {
+      opacity: 0.3;
+      fill: #46c1ae;
+    }
+  }
+}

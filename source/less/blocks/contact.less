@@ -63,6 +63,25 @@
     top: 24px;
     background-color: #62d1ba;
   }
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+
+    opacity: 0.3;
+  }
 }
 
 .contact__address {
