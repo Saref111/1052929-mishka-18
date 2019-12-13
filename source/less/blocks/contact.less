@@ -52,6 +52,36 @@
 
 .contact__email {
   .font-set(15px, 400, 30px, @gray4);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 177px;
+    height: 1px;
+    left: 2px;
+    top: 24px;
+    background-color: #62d1ba;
+  }
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+
+    opacity: 0.3;
+  }
 }
 
 .contact__address {
@@ -149,6 +179,11 @@
   .contact__email {
     .font-set(17px, 400, 30px, @gray4);
     letter-spacing: -0.1px;
+
+    &::before {
+      width: 200px;
+      top: 26px;
+    }
   }
 
   .contact__address {

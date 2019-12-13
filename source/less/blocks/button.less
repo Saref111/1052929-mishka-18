@@ -5,10 +5,25 @@
 
   &--arrow {
     border: 1px solid #ececec;
+    cursor: pointer;
+    .opacity();
   }
 
   &--green {
     background-color: @aqua-light;
     border: none;
+  }
+
+  &--ghost {
+    &:hover,
+    &:focus {
+      background-color: @gray4;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &:active {
+      background-color: @gray4;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

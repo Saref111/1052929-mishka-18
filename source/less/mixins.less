@@ -10,3 +10,69 @@
   padding: 0;
   list-style: none;
 }
+
+.opacity() {
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.opacity-text() {
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+
+    & svg {
+      opacity: 1;
+      fill: @aqua-light;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    & svg {
+      opacity: 0.3;
+      fill: @aqua-light;
+    }
+  }
+}
+
+.opacity-footer() {
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+
+    & svg {
+      opacity: 1;
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    & svg {
+      opacity: 0.3;
+      fill: #46c1ae;
+    }
+  }
+}
+
+.hover-shadow() {
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
