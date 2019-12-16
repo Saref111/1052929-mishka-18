@@ -86,6 +86,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
     "source/img/**",
+    "source/js/polyfils/*.js",
     "source/*.ico*"
   ], {
     base: "source"
@@ -96,7 +97,9 @@ gulp.task("copy", function () {
 gulp.task("js", function () {
   return pipeline(
     gulp.src("source/js/*.js"),
+    sourcemap.init(),
     uglify(),
+    sourcemap.write("."),
     rename({suffix: ".min"}),
     gulp.dest("build/js")
   );
