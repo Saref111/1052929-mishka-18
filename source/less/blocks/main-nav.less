@@ -11,6 +11,10 @@
   right: 32px;
   cursor: pointer;
 
+  &--no-js {
+    display: none;
+  }
+
   &--opened {
     width: 24px;
     height: 23px;
@@ -42,16 +46,22 @@
 }
 
 .main-nav__item {
+  display: none;
   padding-top: 26px;
   padding-left: 75px;
   padding-bottom: 28px;
   border-bottom: 1px solid @gray1;
 
   &:first-child {
+    display: block;
     border-top: 1px solid @gray1;
     padding-top: 22px;
     padding-bottom: 15px;
     padding-left: 115px;
+  }
+
+  &--optional {
+    display: block;
   }
 
   &:nth-child(6),
@@ -105,6 +115,7 @@
   }
 
   .main-nav__item {
+    display: block;
     border: none;
     padding-left: 0;
 
