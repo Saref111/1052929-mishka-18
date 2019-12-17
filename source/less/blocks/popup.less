@@ -75,11 +75,14 @@
 }
 
 .popup__size label:hover,
-.popup__size input:focus ~ label {
+.popup__size input:focus ~ label,
+.popup__size input:checked ~ label {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
-.popup__size label:active {
+.popup__size label:active,
+.popup__size input:focus ~ label,
+.popup__size input:checked ~ label {
   border: 2px solid @aqua-light;
 }
 
